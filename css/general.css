@@ -1,0 +1,228 @@
+/*
+DESIGN SETTINGS
+
+01 TYPOGRAPHY SETTINGS
+
+- Font sizes (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 /
+  62 / 74 / 86 / 98
+
+- Font weights
+    Default: 400
+    Medium: 500
+    Semi-bold: 600
+    Bold: 700
+
+- Line heights
+    Default: 1
+    Primary heading: 1.05
+    Text: 1.5
+    titles: 1.4
+
+- Letter spacing
+    Primary heading: -1px
+
+02 COLORS
+
+- Primary:
+    #016445
+- Secondary:
+    #e9fac8
+- Tertiary:
+    #fff3bf
+- Tints:
+    #34836a
+- Shades: 
+- Accents:
+    Pizza #fd7e14
+    Pasta #63e6be
+    Salad #51cf66
+- Greys:
+    Default: #555
+    Headings: #444
+    As featured in: #888
+
+05 SHADOWS
+
+06 BORDER-RADIUS
+
+07 WHITESPACE
+
+- Spacing system (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: #fffef9;
+  overflow-x: hidden;
+}
+
+/*****************************/
+/* GENERAL REUSABLE CLASSES */
+/*****************************/
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.heading-primary {
+  font-family: "Playfair Display", serif;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  margin-bottom: 2.4rem;
+  color: #444;
+}
+
+.heading-secondary {
+  font-family: "Playfair Display", serif;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  color: #444;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  color: #444;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #016445;
+
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 1.8px;
+}
+
+li,
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* General button styles*/
+
+.btn:link,
+.btn:visited {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #34836a;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #e9fac8;
+  box-shadow: inset 0 0 0 3px #34836a;
+  color: #34836a;
+}
+
+/* General Underlined Links */
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #016445;
+  padding-bottom: 4px;
+  border-bottom: 1px solid currentColor;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  border-bottom: 1px solid transparent;
+}
+
+/* Testimonial highlight */
+.strong {
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 243, 191) 0%,
+    rgb(255, 243, 191) 50%,
+    rgba(228, 188, 11, 0.308) 100%
+  );
+}
+
+.grid--center-h {
+  justify-content: center !important;
+}
+.grid--center-v {
+  align-items: center !important;
+}
+.grid--start-v {
+  align-items: flex-start !important;
+}
+
+.center-text {
+  text-align: center !important;
+}
+
+.margin-bottom-xsm {
+  margin-bottom: 1.6rem !important;
+}
+.margin-bottom-sm {
+  margin-bottom: 3.2rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.margin-bottom-lg {
+  margin-bottom: 6.4rem !important;
+}
+
+.order-switch {
+  order: 1;
+}

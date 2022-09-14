@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- PLAYFAIR DISPLAY FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- RUBIK (DEFAULT) FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Verdura | DEMO Restaurant Website</title>
+  </head>
+  <body class="menupage">
+    <!-- HEADER -->
+    <header class="header">
+      <a href="index.html" class="logo-link">
+        <img src="img/logo.png" class="logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="menu.html" class="main-nav-link">Menu</a></li>
+          <li><a href="gallery.html" class="main-nav-link">Gallery</a></li>
+          <li><a href="about.html" class="main-nav-link">About</a></li>
+          <li><a href="contact.html" class="main-nav-link">Contact</a></li>
+          <li>
+            <a
+              href="#id-reserve"
+              class="main-nav-link nav-cta btn--scroll-to-res"
+              >Reservation</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon
+          name="menu-outline"
+          class="icon-mobile-nav menu-icon"
+        ></ion-icon>
+        <ion-icon
+          name="close-outline"
+          class="icon-mobile-nav close-icon"
+        ></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-menu">
+        <div class="container center-text">
+          <span class="subheading">Menu</span>
+          <h2 class="heading-secondary">See our menu</h2>
+        </div>
+        <div class="container">
+          <div class="menu">
+            <!-- Tabs container -->
+            <div class="menu-tabs">
+              <button class="tab tab--active" data-tab="1">
+                <ion-icon name="pizza-outline" class="tab-icon"></ion-icon>
+                <p class="tab-name">Pizza</p>
+                <div class="tab-dot">&nbsp;</div>
+              </button>
+
+              <button class="tab" data-tab="2">
+                <ion-icon name="ice-cream-outline" class="tab-icon"></ion-icon>
+                <p class="tab-name">Pasta</p>
+                <div class="tab-dot">&nbsp;</div>
+              </button>
+
+              <button class="tab" data-tab="3">
+                <ion-icon name="leaf-outline" class="tab-icon"></ion-icon>
+                <p class="tab-name">Salad</p>
+                <div class="tab-dot">&nbsp;</div>
+              </button>
+            </div>
+
+            <!-- Menu sliders container -->
+            <div class="menu-sliders-container">
+              <!-- Pizza slider -->
+              <div class="menu-slider menu-slider--1 menu-slider--active">
+                <!-- Pizza slide 1-->
+                <ul class="menu-slide pizza-slide pizza-slide--1">
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/Toscana-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Toscana</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, mozzarella, spicy beef salami, toscana
+                        sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/Pugliese-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Pugliese</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, mozzarella, red onions, black olives
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/Prosciutto-Di-Tacchino-E-Funghi-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Prosciutto Di Tacchino</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, mozzarella, turkey ham, mushrooms
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/Pesto-Con-Spinaci-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Pesto Con Spinaci</p>
+                      <p class="menu-item-desc">
+                        Pesto-crema sauce, mozzarella, spinach, bruschetta sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/Funghi-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Funghi</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, mozzarella, mushrooms
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/Diavolo-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Diavolo</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, mozzarella, spicy beef salami, red and
+                        yellow paprika, red onions
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Pizza slide 2 -->
+                <ul class="menu-slide pizza-slide pizza-slide--2">
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/Dell-Alpe-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Dell’alpe</p>
+                      <p class="menu-item-desc">
+                        Garlic sauce, mozzarella, smoked cheese, blue cheese,
+                        sun dried tomatoes, mushrooms
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/Calzone-Kapal-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Calzone</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, mozzarella, artichoke, mushrooms, spicy
+                        beef salami, turkey ham, red onions, olives
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/Bruschetta-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Bruschetta Pizza</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, mozzarella, rocket, parmesan, bruschetta
+                        sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/Bianca-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Bianca</p>
+                      <p class="menu-item-desc">
+                        Garlic sauce, mozzarella, rosemary, ricotta cheese,
+                        basil
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pizza/BBQ-Chicken-Pizza-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">BBQ Chicken</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, mozzarella, BBQ chicken breast, smoked
+                        cheese, red onions, barbeque sauce
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Dots for Pizza slider-->
+                <div class="dots-container" data-dots="1">
+                  <!-- <div class="dot dot--salad dot--active"></div> -->
+                </div>
+              </div>
+
+              <!-- Pasta slider -->
+              <div class="menu-slider menu-slider--2">
+                <!-- Pasta slide 1-->
+                <ul class="menu-slide pasta-slide pasta-slide--1">
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Verdure-Pasta-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Verdura Pasta</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, roasted vegetables, balsamic onions,
+                        parsley
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Scampi-Spinaci-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Scampi E Spinaci</p>
+                      <p class="menu-item-desc">
+                        Pesto sauce, shrimp, cream sauce, spinach, onions,
+                        cherry tomatoes
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Scampi-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Scampi</p>
+                      <p class="menu-item-desc">
+                        Shrimp, carrot, fresh onions, white wine, tomato sauce,
+                        dill
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Salmone-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Salmone</p>
+                      <p class="menu-item-desc">
+                        Garlic, cream sauce, smoked salmon, parsley, zucchini
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Pomodoro-E-Mozzarella-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Pomodoro E Mozzarella</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, balsamic onions, basil, mozzarella
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Pollo-Piccante-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Pollo Piccante</p>
+                      <p class="menu-item-desc">
+                        Chicken breast, orange chilli sauce, chard, red yellow
+                        paprika
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Pasta slide 2 -->
+                <ul class="menu-slide pasta-slide pasta-slide--2">
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/pesto-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Pesto</p>
+                      <p class="menu-item-desc">
+                        Olive oil, pine nuts, pesto sauce, basil
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Pasta-Campanella-Marinara-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Marinara</p>
+                      <p class="menu-item-desc">
+                        Squid, mussels, white wine, cherry tomatoes, parsley,
+                        vegetable stock, red and yellow paprika
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Filetto-E-Porcini-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Filetto E Porcini</p>
+                      <p class="menu-item-desc">
+                        Beef fillet, porcini mushrooms, balsamic onions, cream
+                        sauce, parsley
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Filetto-Di-Manzo-Rucola-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Filetto Di Manzo</p>
+                      <p class="menu-item-desc">
+                        Beef fillet, mushrooms, squash, carrot, rocket, white
+                        wine, balsamic onions
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Bolognese-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Bolognese</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, bolognaise sauce, cherry tomatoes, carrot,
+                        onions
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Arrabiatta-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Arrabiata</p>
+                      <p class="menu-item-desc">
+                        Tomato sauce, chilli, onions, basil
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Pasta slide 3 -->
+                <ul class="menu-slide pasta-slide pasta-slide--3">
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/pasta/Alfredo-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Alfredo</p>
+                      <p class="menu-item-desc">
+                        Pesto sauce, chicken breast, cream sauce, onions
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Dots for Pasta slider -->
+                <div class="dots-container" data-dots="2">
+                  <!-- <div class="dot dot--salad dot--active"></div> -->
+                </div>
+              </div>
+
+              <!-- Salad slider -->
+              <div class="menu-slider menu-slider--3">
+                <!-- Salad slide 1 -->
+                <ul class="menu-slide salad-slide salad-slide--1">
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/salad/Insalata-Cesare-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Insalata Cesare</p>
+                      <p class="menu-item-desc">
+                        Cos lettuce, croutons, parmesan, cherry tomatoes, cesare
+                        sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/salad/Insalata-Caprese-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Insalata Caprese</p>
+                      <p class="menu-item-desc">
+                        Fresh mozzarella, cherry tomatoes, red onions, balsamic
+                        sauce, basil
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/salad/Insalata-Americano-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Insalata Americano</p>
+                      <p class="menu-item-desc">
+                        Mixed salad, tomatoes, fresh onions, roasted vegetables,
+                        shrimp, beef fillet, rucola sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/salad/Insalata-Al-Funghi-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Insalata Al Funghi</p>
+                      <p class="menu-item-desc">
+                        Mixed salad, cherry tomatoes, fresh onions, beef bacon,
+                        mushrooms, parsley, rucola sauce
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-img-box">
+                      <img
+                        src="img/menu/salad/bruschetta-min.webp"
+                        class="menu-item-img"
+                      />
+                    </div>
+                    <div class="menu-item-text">
+                      <p class="menu-item-name">Bruschetta</p>
+                      <p class="menu-item-desc">
+                        Two pieces of toasted bread, bruschetta sauce, basil
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Dots for salad slider -->
+                <div class="dots-container" data-dots="3">
+                  <!-- <div class="dot dot--salad dot--active"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- RESERVATION SECTION -->
+      <section class="section-reservation" id="id-reserve">
+        <div class="container center-text">
+          <span class="subheading">Reservation</span>
+          <h2 class="heading-secondary">Book a table</h2>
+        </div>
+        <div class="container">
+          <div class="reserve">
+            <div>
+              <form class="reserve-form" name="reservation" netlify>
+                <div>
+                  <label for="full-name">Full name:</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Your email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="tel">Your number:</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    placeholder="+61441272417"
+                    name="tel"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="size-select">Party size:</label>
+                  <select id="size-select" name="size-select" required>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 Person</option>
+                    <option value="3">3 Person</option>
+                    <option value="4">4 Person</option>
+                    <option value="5">5 Person</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="date">Reservation date</label>
+                  <input
+                    type="text"
+                    id="date"
+                    placeholder="14/02/2023"
+                    name="date"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="hour-select">Reservation Hour: </label>
+                  <select id="hour-select" name="hour-select" required>
+                    <option value="1">1:00 PM</option>
+                    <option value="2">2:00 PM</option>
+                    <option value="3">3:00 PM</option>
+                    <option value="4">4:00 PM</option>
+                    <option value="5">5:00 PM</option>
+                  </select>
+                </div>
+
+                <button class="btn-form">Book a table</button>
+              </form>
+            </div>
+            <picture class="reserve-img-box">
+              <source srcset="img/z13.jpg" media="(max-width: 44em)" />
+              <img src="img/z18.jpg" class="reserve-img" />
+              <!-- Background can be made -->
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.008344821637!2d29.07876731474656!3d40.95939603038142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7a0672a416b%3A0x8b40444d0004f3ba!2sVerdura%20Restaurant%20Suadiye!5e0!3m2!1str!2str!4v1662783487146!5m2!1str!2str"
+          width="600"
+          height="450"
+          class="map"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="container grid grid--footer">
+        <!-- Logo column -->
+        <div class="logo-col">
+          <!-- Footer logo -->
+          <a href="#" class="footer-logo-link btn--scroll-to-top">
+            <img src="img/image.png" class="footer-logo" />
+          </a>
+          <!-- Social links -->
+          <ul class="social-links">
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/verduraistanbul/"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.facebook.com/verdurarestaurant"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <!-- Copyright -->
+          <p class="copyright">
+            Copyright &copy; <span class="year">2022</span> by Verdura. All
+            rights reserved.
+          </p>
+        </div>
+
+        <!-- Address column -->
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              Selim Ragıp Emeç Sokak No: 4/A, Suadiye, Kadıköy, İstanbul |
+              Türkiye
+            </p>
+            <p>
+              <a class="footer-link" href="tel:+90 216 464 42 65"
+                >+90 216 464 42 65</a
+              ><br />
+              <a class="footer-link" href="mailto:info@verdura.com.tr"
+                >info@verdura.com.tr</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <!-- Hours column -->
+        <div class="hours-col">
+          <p class="footer-heading">We are open</p>
+          <p class="hours">Mon - Thu<br />9:30 AM - 11:30 PM</p>
+          <p class="hours">Fri - Sun<br />9:30 AM - 12:00 PM</p>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="about.html">About Verdura</a></li>
+            <li><a class="footer-link" href="career.html">Carreer</a></li>
+            <li><a class="footer-link" href="about.html#id-uhp">UHP</a></li>
+            <li>
+              <a class="footer-link" href="franchising.html">Franchising</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Other links</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="faq.html">FAQ</a></li>
+            <li>
+              <a class="footer-link" href="privacy.html">Privacy policy</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Terms & Conditions</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Ionicons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Our script-->
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

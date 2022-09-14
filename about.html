@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- PLAYFAIR DISPLAY FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- RUBIK (DEFAULT) FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Verdura | DEMO Restaurant Website</title>
+  </head>
+  <body class="gallerypage">
+    <!-- HEADER -->
+    <header class="header">
+      <a href="#" class="logo-link">
+        <img src="img/logo.png" class="logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="menu.html" class="main-nav-link">Menu</a></li>
+          <li><a href="gallery.html" class="main-nav-link">Gallery</a></li>
+          <li><a href="about.html" class="main-nav-link">About</a></li>
+          <li><a href="contact.html" class="main-nav-link">Contact</a></li>
+          <li>
+            <a
+              href="#id-reserve"
+              class="main-nav-link nav-cta btn--scroll-to-res"
+              >Reservation</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon
+          name="menu-outline"
+          class="icon-mobile-nav menu-icon"
+        ></ion-icon>
+        <ion-icon
+          name="close-outline"
+          class="icon-mobile-nav close-icon"
+        ></ion-icon>
+      </button>
+    </header>
+
+    <!-- MAIN CONTENT-->
+    <main>
+      <section class="section-about">
+        <div class="container">
+          <span class="subheading">About</span>
+          <h2 class="heading-secondary">Verdana Restaurant</h2>
+
+          <div class="about-container">
+            <div class="about-item about-item--switch">
+              <div class="about-img-box">
+                <img src="img/verdura (3).jpg" class="about-img" />
+              </div>
+              <div class="about-text-box">
+                <h3 class="about-heading">Our Story</h3>
+                <p class="about-text">
+                  The Verdura brand is an Italian restaurant concept developed
+                  by Universal Hospitality Project Development Franchising &
+                  Consulting Ltd. Co. Verdura combines
+                  <strong>Italian cuisine</strong> with its distinctive style
+                  while serving its customers with
+                  <strong>modern design</strong> and a
+                  <strong>self-service</strong> approach.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-item">
+              <div class="about-text-box">
+                <h3 class="about-heading">Top quality ingredients</h3>
+                <p class="about-text">
+                  Although the self-service layout and quick food preparation at
+                  Verdura are features of fast-food restaurants, the quality of
+                  the food and the
+                  <strong>ingredients used are top level.</strong>
+                </p>
+                <p class="about-text">
+                  The show kitchen was created so that customers can observe the
+                  preparation of all orders. Customers
+                  <strong>can alter the menus</strong> by adding more
+                  ingredients if they so like. The clients are always served
+                  food made with fresh, carefully chosen ingredients.
+                </p>
+              </div>
+              <div class="about-img-box">
+                <img src="img/verdura (2).jpg" class="about-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-banner">
+        <div class="banner">
+          <h2 class="banner-heading">Best place for culinary</h2>
+        </div>
+      </section>
+
+      <section class="section-about" id="uhp">
+        <div class="container">
+          <div class="about-item about-item--switch">
+            <div class="about-img-box">
+              <img src="img/z19.jpg" class="about-img" />
+            </div>
+            <div class="about-text-box">
+              <h3 class="about-heading">About our company</h3>
+              <p class="about-text">
+                Universal Hospitality Project Development Franchising &
+                Consultancy Ltd. Co. was founded as an investment company with
+                German partners, with its main shareholders being investors and
+                hotel owners who are experts in restaurant, hotel, and
+                residential development worldwide.
+              </p>
+              <p class="about-text">
+                For more than 25 years, UHP’s founders developed hotel, resort,
+                and restaurant projects, as well as more than 60,000 residential
+                units in Europe, Africa, the Middle East, Asia, and the
+                Americas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESERVATION SECTION -->
+      <section class="section-reservation" id="id-reserve">
+        <div class="container center-text">
+          <span class="subheading">Reservation</span>
+          <h2 class="heading-secondary">Book a table</h2>
+        </div>
+        <div class="container">
+          <div class="reserve">
+            <div>
+              <form class="reserve-form" name="reservation" netlify>
+                <div>
+                  <label for="full-name">Full name:</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Your email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="tel">Your number:</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    placeholder="+61441272417"
+                    name="tel"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="size-select">Party size:</label>
+                  <select id="size-select" name="size-select" required>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 Person</option>
+                    <option value="3">3 Person</option>
+                    <option value="4">4 Person</option>
+                    <option value="5">5 Person</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="date">Reservation date</label>
+                  <input
+                    type="text"
+                    id="date"
+                    placeholder="14/02/2023"
+                    name="date"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="hour-select">Reservation Hour: </label>
+                  <select id="hour-select" name="hour-select" required>
+                    <option value="1">1:00 PM</option>
+                    <option value="2">2:00 PM</option>
+                    <option value="3">3:00 PM</option>
+                    <option value="4">4:00 PM</option>
+                    <option value="5">5:00 PM</option>
+                  </select>
+                </div>
+
+                <button class="btn-form">Book a table</button>
+              </form>
+            </div>
+            <picture class="reserve-img-box">
+              <source srcset="img/z13.jpg" media="(max-width: 44em)" />
+              <img src="img/z18.jpg" class="reserve-img" />
+              <!-- Background can be made -->
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.008344821637!2d29.07876731474656!3d40.95939603038142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7a0672a416b%3A0x8b40444d0004f3ba!2sVerdura%20Restaurant%20Suadiye!5e0!3m2!1str!2str!4v1662783487146!5m2!1str!2str"
+          width="600"
+          height="450"
+          class="map"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="container grid grid--footer">
+        <!-- Logo column -->
+        <div class="logo-col">
+          <!-- Footer logo -->
+          <a href="#" class="footer-logo-link btn--scroll-to-top">
+            <img src="img/image.png" class="footer-logo" />
+          </a>
+          <!-- Social links -->
+          <ul class="social-links">
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/verduraistanbul/"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.facebook.com/verdurarestaurant"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <!-- Copyright -->
+          <p class="copyright">
+            Copyright &copy; <span class="year">2022</span> by Verdura. All
+            rights reserved.
+          </p>
+        </div>
+
+        <!-- Address column -->
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              Selim Ragıp Emeç Sokak No: 4/A, Suadiye, Kadıköy, İstanbul |
+              Türkiye
+            </p>
+            <p>
+              <a class="footer-link" href="tel:+90 216 464 42 65"
+                >+90 216 464 42 65</a
+              ><br />
+              <a class="footer-link" href="mailto:info@verdura.com.tr"
+                >info@verdura.com.tr</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <!-- Hours column -->
+        <div class="hours-col">
+          <p class="footer-heading">We are open</p>
+          <p class="hours">Mon - Thu<br />9:30 AM - 11:30 PM</p>
+          <p class="hours">Fri - Sun<br />9:30 AM - 12:00 PM</p>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="about.html">About Verdura</a></li>
+            <li><a class="footer-link" href="career.html">Carreer</a></li>
+            <li><a class="footer-link" href="about.html#uhp">UHP</a></li>
+            <li>
+              <a class="footer-link" href="franchising.html">Franchising</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Other links</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="faq.html">FAQ</a></li>
+            <li>
+              <a class="footer-link" href="privacy.html">Privacy policy</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Terms & Conditions</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Ionicons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Our script-->
+    <script src="js/script.js"></script>
+    <!-- <script src="js/about.js"></script> -->
+  </body>
+</html>

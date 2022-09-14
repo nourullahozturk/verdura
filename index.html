@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- PLAYFAIR DISPLAY FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- RUBIK (DEFAULT) FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Verdura | DEMO Restaurant Website</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <a href="#" class="logo-link">
+        <img src="img/logo.png" class="logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="menu.html" class="main-nav-link">Menu</a></li>
+          <li><a href="gallery.html" class="main-nav-link">Gallery</a></li>
+          <li><a href="about.html" class="main-nav-link">About</a></li>
+          <li><a href="contact.html" class="main-nav-link">Contact</a></li>
+          <li>
+            <a
+              href="#id-reserve"
+              class="main-nav-link nav-cta btn--scroll-to-res"
+              >Reservation</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon
+          name="menu-outline"
+          class="icon-mobile-nav menu-icon"
+        ></ion-icon>
+        <ion-icon
+          name="close-outline"
+          class="icon-mobile-nav close-icon"
+        ></ion-icon>
+      </button>
+    </header>
+
+    <!-- MAIN CONTENT-->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Italian Restaurant & Wine Bar</h1>
+            <p class="hero-description">
+              At Verdura, the Italian specialties created by our chefs make the
+              experiences of our visitors unique
+            </p>
+            <a href="#id-reserve" class="btn btn--scroll-to-res">Reservation</a>
+          </div>
+
+          <div class="hero-img-box">
+            <img src="img/hero.png" class="hero-img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- AS FEATURED IN SECTION -->
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured">As Featured In</h2>
+          <div class="logos">
+            <img src="img/logos/business-insider.png" />
+            <img src="img/logos/forbes.png" />
+            <img src="img/logos/techcrunch.png" />
+            <img src="img/logos/the-new-york-times.png" />
+            <img src="img/logos/usa-today.png" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SAMPLE MEALS SECTION -->
+      <section class="section-meals">
+        <!-- Meals section title -->
+        <div class="container center-text">
+          <span class="subheading">Featured Meals</span>
+          <h2 class="heading-secondary">Did you ever taste our specials?</h2>
+        </div>
+        <!-- Meals section content -->
+        <div class="container grid grid--3-cols grid--start-v margin-bottom-md">
+          <figure class="meal">
+            <div class="meal-img-box">
+              <img src="img/featured-meal-1-min-300x297.png" class="meal-img" />
+            </div>
+            <div class="meal-content">
+              <span class="tag tag--pasta">Pasta</span>
+              <p class="meal-title">Bruschetta</p>
+              <ul class="meal-ingredients-list">
+                <li class="meal-ingredient">bruschetta sauce</li>
+                <li class="meal-ingredient">toasted bread x2</li>
+                <li class="meal-ingredient">basil</li>
+              </ul>
+            </div>
+          </figure>
+          <figure class="meal">
+            <div class="meal-img-box">
+              <img src="img/featured-meal-2-min-300x300.png" class="meal-img" />
+            </div>
+            <div class="meal-content">
+              <span class="tag tag--pizza">Pizza</span>
+              <p class="meal-title">Diavolo Pizza</p>
+              <ul class="meal-ingredients-list">
+                <li class="meal-ingredient">Tomato sauce</li>
+                <li class="meal-ingredient">mozzarella</li>
+                <li class="meal-ingredient">spicy beef salami</li>
+                <li class="meal-ingredient">red onions</li>
+                <li class="meal-ingredient">paprika</li>
+              </ul>
+            </div>
+          </figure>
+          <figure class="meal">
+            <div class="meal-img-box">
+              <img src="img/featured-meal-3-min-300x300.png" class="meal-img" />
+            </div>
+            <div class="meal-content">
+              <span class="tag tag--salad">Salad</span>
+              <p class="meal-title">Aglio E Olio</p>
+              <ul class="meal-ingredients-list">
+                <li class="meal-ingredient">Olive oil</li>
+                <li class="meal-ingredient">chili pepper</li>
+                <li class="meal-ingredient">garlic</li>
+                <li class="meal-ingredient">parsley</li>
+              </ul>
+            </div>
+          </figure>
+        </div>
+        <!-- Meals section cta-->
+        <div class="container center-text">
+          <a href="menu.html" class="link">See all meals</a>
+        </div>
+      </section>
+
+      <!-- GALLERY SECTION -->
+      <section class="section-gallery">
+        <div class="container center-text">
+          <span class="subheading">Gallery</span>
+          <h2 class="heading-secondary">See what's here!</h2>
+        </div>
+        <div class="gallery-container">
+          <figure class="gallery-item gallery-item--1">
+            <img src="img/verdura.jpg" class="gallery-img" />
+          </figure>
+          <figure class="gallery-item gallery-item--2">
+            <img src="img/gallery-1-1024x1024.webp" class="gallery-img" />
+          </figure>
+          <figure class="gallery-item gallery-item--3">
+            <img src="img/verdura (2).jpg" class="gallery-img" />
+          </figure>
+          <figure class="gallery-item gallery-item--4">
+            <img src="img/photo1jpg.jpg" class="gallery-img" />
+          </figure>
+          <figure class="gallery-item gallery-item--5">
+            <img src="img/verdura (6).jpg" class="gallery-img" />
+          </figure>
+          <figure class="gallery-item gallery-item--6">
+            <img src="img/photo3jpg.jpg" class="gallery-img" />
+          </figure>
+          <figure class="gallery-item gallery-item--7">
+            <img src="img/ig1.jpg" class="gallery-img" />
+          </figure>
+        </div>
+        <!-- Gallery section cta -->
+        <div class="container center-text">
+          <a href="gallery.html" class="link">See all photos</a>
+        </div>
+      </section>
+
+      <!-- TESTIMONILAS SECTION -->
+      <section class="section-testimonials">
+        <div class="container center-text">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary margin-bottom-md">
+            What our customers say
+          </h2>
+        </div>
+
+        <div class="slider">
+          <div class="slide">
+            <div class="testimonial">
+              <blockquote class="testimonial-text">
+                <!--review-->
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non?<span class="strong"
+                  >Quas voluptate nulla minima deleniti optio ullam
+                  nesciunt</span
+                >numquam corporis et asperiores laboriosam sunt, praesentium
+                suscipit blanditiis. Necessitatibus id alias reiciendis,
+                perferendis facere pariatur dolore veniam autem esse non
+                voluptatem saepe provident nihil molestiae."
+              </blockquote>
+              <div class="testimonial-author">
+                <img
+                  src="img/customers/customer-1.jpg"
+                  class="testimonial-img"
+                />
+                <p class="testimonial-name">Jessica Davis</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <blockquote class="testimonial-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                deleniti optio ullam nesciunt, numquam corporis et asperiores
+                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                id alias reiciendis, perferendis facere pariatur dolore veniam
+                autem esse non voluptatem saepe provident nihil molestiae.
+              </blockquote>
+              <div class="testimonial-author">
+                <img
+                  src="img/customers/customer-2.jpg"
+                  class="testimonial-img"
+                />
+                <p class="testimonial-name">Mark Fitswell</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <blockquote class="testimonial-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                deleniti optio ullam nesciunt, numquam corporis et asperiores
+                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                id alias reiciendis, perferendis facere pariatur dolore veniam
+                autem esse non voluptatem saepe provident nihil molestiae.
+              </blockquote>
+              <div class="testimonial-author">
+                <img
+                  src="img/customers/customer-3.jpg"
+                  class="testimonial-img"
+                />
+                <p class="testimonial-name">Ashley Sweet</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn slider-btn--left">
+            <ion-icon
+              name="chevron-back-outline"
+              class="slider-icon"
+            ></ion-icon>
+          </button>
+          <button class="slider-btn slider-btn--right">
+            <ion-icon
+              name="chevron-forward-outline"
+              class="slider-icon"
+            ></ion-icon>
+          </button>
+          <!-- <div class="dots"></div> -->
+        </div>
+      </section>
+
+      <!-- FEATURES SECTION -->
+      <section class="section-features">
+        <div class="container center-text">
+          <span class="subheading">Features</span>
+          <h2 class="heading-secondary">Provided by our restaruant</h2>
+        </div>
+        <div class="container grid-feature">
+          <div class="feature">
+            <ion-icon name="restaurant-outline" class="feature-icon"></ion-icon>
+            <p class="feature-title">Dolci Menu</p>
+            <p class="feature-description">
+              We offer renowned natural Italian desserts
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon name="beer-outline" class="feature-icon"></ion-icon>
+            <p class="feature-title">Verdura Bar</p>
+            <p class="feature-description">For pleasant approaches and chats</p>
+          </div>
+          <div class="feature">
+            <ion-icon name="cafe-outline" class="feature-icon"></ion-icon>
+            <p class="feature-title">Coffee & Chocolate</p>
+            <p class="feature-description">
+              Coffees with hot and cold flavours
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon name="leaf-outline" class="feature-icon"></ion-icon>
+            <p class="feature-title">Black tea & herbal tea</p>
+            <p class="feature-description">
+              Before meal, after meal, or with a meal
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESERVATION SECTION -->
+      <section class="section-reservation" id="id-reserve">
+        <div class="container center-text">
+          <span class="subheading">Reservation</span>
+          <h2 class="heading-secondary">Book a table</h2>
+        </div>
+        <div class="container">
+          <div class="reserve">
+            <div>
+              <form class="reserve-form" name="reservation" netlify>
+                <div>
+                  <label for="full-name">Full name:</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Your email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="tel">Your number:</label>
+                  <input
+                    type="tel"
+                    id="tel"
+                    placeholder="+61441272417"
+                    name="tel"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="size-select">Party size:</label>
+                  <select id="size-select" name="size-select" required>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 Person</option>
+                    <option value="3">3 Person</option>
+                    <option value="4">4 Person</option>
+                    <option value="5">5 Person</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="date">Reservation date</label>
+                  <input
+                    type="text"
+                    id="date"
+                    placeholder="14/02/2023"
+                    name="date"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="hour-select">Reservation Hour: </label>
+                  <select id="hour-select" name="hour-select" required>
+                    <option value="1">1:00 PM</option>
+                    <option value="2">2:00 PM</option>
+                    <option value="3">3:00 PM</option>
+                    <option value="4">4:00 PM</option>
+                    <option value="5">5:00 PM</option>
+                  </select>
+                </div>
+
+                <button class="btn-form">Book a table</button>
+              </form>
+            </div>
+            <picture class="reserve-img-box">
+              <source srcset="img/z13.jpg" media="(max-width: 44em)" />
+              <img src="img/z18.jpg" class="reserve-img" />
+              <!-- Background can be made -->
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.008344821637!2d29.07876731474656!3d40.95939603038142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7a0672a416b%3A0x8b40444d0004f3ba!2sVerdura%20Restaurant%20Suadiye!5e0!3m2!1str!2str!4v1662783487146!5m2!1str!2str"
+          width="600"
+          height="450"
+          class="map"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="container grid grid--footer">
+        <!-- Logo column -->
+        <div class="logo-col">
+          <!-- Footer logo -->
+          <a href="#" class="footer-logo-link btn--scroll-to-top">
+            <img src="img/image.png" class="footer-logo" />
+          </a>
+          <!-- Social links -->
+          <ul class="social-links">
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/verduraistanbul/"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.facebook.com/verdurarestaurant"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <!-- Copyright -->
+          <p class="copyright">
+            Copyright &copy; <span class="year">2022</span> by Verdura. All
+            rights reserved.
+          </p>
+        </div>
+
+        <!-- Address column -->
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              Selim Ragıp Emeç Sokak No: 4/A, Suadiye, Kadıköy, İstanbul |
+              Türkiye
+            </p>
+            <p>
+              <a class="footer-link" href="tel:+90 216 464 42 65"
+                >+90 216 464 42 65</a
+              ><br />
+              <a class="footer-link" href="mailto:info@verdura.com.tr"
+                >info@verdura.com.tr</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <!-- Hours column -->
+        <div class="hours-col">
+          <p class="footer-heading">We are open</p>
+          <p class="hours">Mon - Thu<br />9:30 AM - 11:30 PM</p>
+          <p class="hours">Fri - Sun<br />9:30 AM - 12:00 PM</p>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="about.html">About Verdura</a></li>
+            <li><a class="footer-link" href="career.html">Carreer</a></li>
+            <li><a class="footer-link" href="about.html#uhp">UHP</a></li>
+            <li>
+              <a class="footer-link" href="franchising.html">Franchising</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Other links</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="faq.html">FAQ</a></li>
+            <li>
+              <a class="footer-link" href="privacy.html">Privacy policy</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Terms & Conditions</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Ionicons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Our script-->
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
